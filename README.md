@@ -7,7 +7,7 @@
 - Signin
 - Book Search
 - API Review Page
-- ## Python Files and Database
+- Python Files and Database
  
  ## Homepage
  This page is just a introduction page to the website, with sigup and sign in tabs
