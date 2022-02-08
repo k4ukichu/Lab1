@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="styles/login_page.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<style>
+  .content{
+    max-width: 500px;
+    margin:auto;
+  }
+  body{
+   background-image: url('Bookpic.jpeg');
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-size: 100% 100%;
+
+  }
+  h1{
+    text-align:center;
+    color:#f0eae5;
+  }
+
+  h2{
+    text-align:center;
+    color:#f0eae5;
+  }
+  .center{
+    text-align:center;
+    color:#07c988;
+    padding: 5px 10px;
+  }
+</style>
+<style>
+    .content{
+      max-width: 500px;
+      margin:auto;
+    }
+    body{
+ 	  background-image: url('Bookpic.jpeg');
+	  background-repeat:no-repeat;
+	  background-attachment:fixed;
+	  background-size: 100% 100%;
+
+    }
+  </style>
+ 
+<body>
+  <div class="container">
+    <div class="content">
+    <h1>Welcome to World of Books Login</h1>
+    </div>
+     <form action="{{url_for('book_search')}}" method="POST">
+       <div class="form-group">
+         <label for="Usernamelabel"  class="center">Username</label>
+         <input type="text" class="form-control" name="username_login" placeholder="username" maxlength="6">
+       </div>
+       <div class="form-group">
+         <label for="passwordlabel" class="center">Password</label>
+         <input type="password" class="form-control" name="password_login" placeholder="password" maxlength="6">
+       </div>
+      
+       <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+       <div class="center">
+       <h2 style="color:rgb(15, 15, 218)"><b>New To World of Books?<b></h2>
+       <br></br>
+       <a href="SignUp.html" type="submit" class="btn btn-primary">Signup</a>
+       <br>
+        
+       </div>
+
+    
+  </body>
+  </html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Books</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/styles/book_search_page.css">
+    
+</head>
+<style>
+    .content{
+      max-width: 500px;
+      margin:auto;
+    }
+    body{
+ 	  background-image: url('Bookpic.jpeg');
+	  background-repeat:no-repeat;
+	  background-attachment:fixed;
+	  background-size: 100% 100%;
+
+    }
+    h1{
+      text-align:center;
+      color:#f0eae5;
+    }
+    .center{
+      text-align:center;
+      color:#e2eeea;
+    }
+  </style>
+
+<body>
+<div class="content">
+         <div class="container">
+
+        <div class="bar">
+           <h1>Welcome to the world of Books</h1>
+            <a href="thankyou.html" type="submit" class="btn btn-primary">Sign Out</a>
+            
+        </div>
+        <div id="search_box">  
+
+            <div class="header">
+                <h2> </h2>
+                
+            </div>
+
+            <form action="{{url_for('search results')}}" method="POST">
+        
+        <div class="results">   
+              <div class="list-group list-group-flush">
+                <a href="" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="search_group">
+                    
+                        <input  type="search" placeholder="Search.." name="search">
+                        <label for="searchFilter">Search By:</label>
+                        <select name="filterType">
+                            <option value="isbn">ISBN</option>
+                            <option value="title">Title of the Book</option>
+                            <option value="author">Author's Name</option>
+                        </select>
+                    <button type="submit">Search</button>
+               </form>
+            </div>
+                </a>
+                <a href="Api.html" type="submit" class="btn btn-primary">Review</a>
+              </div>
+              <hr>
+            <div class="alert alert-danger" role="alert">
+                <h4 class="alert-heading">Not found</h4>
+                <p>No matched results</p>
+            </div>
+          
+       </div>
+     </div>
+     
+     </div>
+     
+    </body>
+
+</html>

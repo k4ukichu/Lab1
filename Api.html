@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Information</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ </head>
+    <style>
+        .content{
+          max-width: 500px;
+          margin:auto;
+        }
+        body{
+           background-image: url('Book3.jpeg');
+          background-repeat:no-repeat;
+          background-attachment:fixed;
+          background-size: 100% 100%;
+    
+        }
+        h2{
+          text-align:center;
+          color:#080802;
+        }
+        p2{
+          text-align:center;
+          color:#08070a;
+        }
+     </style>
+<body>
+<div class="container">
+    <h2 id="bookTitleHeader">Title</h2>
+    <ul class="list-group">
+        <li class="list-group-item"><span class="spanbook" id="spanbook1">Book ISBN</span> : ID</li>
+        <li class="list-group-item"><span class="spanbook" id="spanbook2">Book Author</span> : Name</li>
+        <li class="list-group-item"><span class="spanbook" id="spanbook3">Publication Year</span> : ****</li>
+      </ul>
+
+      <h2 id="reviewsHeader">Reviews</h2>
+
+      <ul class="list-group">
+        
+        <li class="list-group-item flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">test sample</h5>
+                <small>
+                   
+                    <span class="fa fa-star checked"></span>
+                 
+                    <span class="fa fa-star"></span>
+         
+                </small>
+            </div>
+            <p class="mb-1">test</p>
+
+        </li>
+       
+      </ul>
+        <div class="alert alert-info" role="alert">
+            There is no reviews for this book yet.
+        </div>
+    
+
+    <h2 id="BooksApiReview">Books API reviews</h2>
+    <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Average Rating
+         
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Number of Ratings
+          
+        </li>
+
+      </ul>
+
+    <h2 id="PersonalreviewHeader">Add your review</h2>
+    <form action="{{url_for('submit_book_review')}}" method="POST">
+    <label id="ratinglabel">Rating:</label>
+    <div class="rating">
+        
+        
+         <input type="radio" name="rating" value="5" id="5">
+         <label for="5">☆</label> 
+
+         <input type="radio" name="rating" value="4" id="4">
+         <label for="4"><b>☆</b></label> 
+
+         <input type="radio" name="rating" value="3" id="3">
+         <label for="3">☆</label> 
+
+         <input type="radio" name="rating" value="2" id="2">
+         <label for="2">☆</label> 
+
+         <input type="radio" name="rating" value="1" id="1">
+         <label for="1">☆</label>
+    </div>
+
+    <div class="form-group">
+        <label for="comment">Comment:</label>
+        <textarea class="form-control" rows="5" id="comment" name="comment"></textarea>
+    </div>
+
+    <div class="note">
+        <p><span>Note:</span> you can't submit multiple reviews for the same book</p>
+    </div>
+ 
+    <button type="submit" class="btn btn-primary">Submit your review</button>
+    <a href= "Error.html"class="btn btn-secondary active" type="submit" aria-pressed="true">Return back to search page</a>
+  </form>
+</div>
+</body>
+</html>
