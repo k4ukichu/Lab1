@@ -23,8 +23,8 @@
  
  ## API review page
  This page allows the user to check the book rating and they can review the books they where want.
- ## App.py and Imoport.py
- The Python files are added to the repository but not able to wark as the flask app is showing error as well as the database and api was not able to add in to the code using HEROKU and Adminer.
+ ## App.py and Import.py
+ The Python files are added to the repository but not able to work as the flask app is showing error as well as the database and api was not able to add in to the code using HEROKU and Adminer.
   
  # Authors
   -Krishnakishore Menon
